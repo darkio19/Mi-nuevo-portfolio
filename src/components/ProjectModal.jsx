@@ -7,6 +7,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [showLightbox, setShowLightbox] = useState(false);
     const [lightboxIndex, setLightboxIndex] = useState(0);
+    const [currentVideoUrl, setCurrentVideoUrl] = useState(null);
     const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
 
     useEffect(() => {
@@ -29,6 +30,12 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
             setMainMedia(initialMedia);
             setIsPlaying(false);
             setShowLightbox(false);
+            // Set YouTube video URL
+            if (project.youtubeIds?.length > 0) {
+                setCurrentVideoUrl(`https://www.youtube.com/embed/${project.youtubeIds[0]}`);
+            } else {
+                setCurrentVideoUrl(project.videoUrl || null);
+            }
         }
     }, [project, allMedia.length]);
 
@@ -196,7 +203,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                     justifyContent: 'center'
                                 }}>
                                     <AnimatePresence mode="wait">
-                                        {isPlaying && project.videoUrl ? (
+                                        {isPlaying && currentVideoUrl ? (
                                             <motion.div
                                                 key="video-yt"
                                                 initial={{ opacity: 0 }}
@@ -207,7 +214,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                                 <iframe
                                                     width="100%"
                                                     height="100%"
-                                                    src={`${project.videoUrl}?autoplay=1`}
+                                                    src={`${currentVideoUrl}?autoplay=1`}
                                                     title="YouTube video player"
                                                     frameBorder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -254,7 +261,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                             whileHover={{ scale: 1.1 }}
                                             whileTap={{ scale: 0.95 }}
                                             onClick={() => {
-                                                if (project.videoUrl) {
+                                                if (currentVideoUrl) {
                                                     setIsPlaying(true);
                                                 } else {
                                                     // Find index of current mainMedia
@@ -285,7 +292,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                                 display: isVideo(mainMedia) ? 'none' : 'flex'
                                             }}
                                         >
-                                            {project.videoUrl ? <Play fill="currentColor" size={24} /> : <Eye size={28} />}
+                                            {currentVideoUrl ? <Play fill="currentColor" size={24} /> : <Eye size={28} />}
                                         </motion.div>
                                     )}
                                 </div>
@@ -329,6 +336,40 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                             ) : (
                                                 <img src={`${import.meta.env.BASE_URL}${img}`} alt={`Gallery ${i}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                             )}
+                                        </motion.div>
+                                    ))}
+                                    {/* YouTube video thumbnails */}
+                                    {project.youtubeIds && project.youtubeIds.map((id, i) => (
+                                        <motion.div
+                                            key={`yt-${i}`}
+                                            whileHover={{ scale: 1.05, opacity: 1 }}
+                                            whileTap={{ scale: 0.95 }}
+                                            onClick={() => {
+                                                setCurrentVideoUrl(`https://www.youtube.com/embed/${id}`);
+                                                setIsPlaying(true);
+                                            }}
+                                            style={{
+                                                flex: '0 0 auto',
+                                                width: isMobile ? '80px' : '100px',
+                                                aspectRatio: '16/10',
+                                                borderRadius: '12px',
+                                                overflow: 'hidden',
+                                                backgroundColor: '#111',
+                                                cursor: 'pointer',
+                                                border: currentVideoUrl === `https://www.youtube.com/embed/${id}` ? '2px solid var(--accent-yellow)' : '1px solid rgba(255,255,255,0.1)',
+                                                opacity: currentVideoUrl === `https://www.youtube.com/embed/${id}` ? 1 : 0.6,
+                                                transition: 'opacity 0.3s, border 0.3s',
+                                                position: 'relative'
+                                            }}
+                                        >
+                                            <img
+                                                src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
+                                                alt={`YouTube video ${i + 1}`}
+                                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                            />
+                                            <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+                                                <Play size={14} color="var(--accent-yellow)" fill="var(--accent-yellow)" />
+                                            </div>
                                         </motion.div>
                                     ))}
                                 </div>

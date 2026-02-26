@@ -12,12 +12,8 @@ const projects = [
         role: "Editor de vídeos",
         year: "2024",
         challenge: "En este proyecto en tugesto desarrollé una serie de vídeos animados para mostrar al usuario, de forma realista, el funcionamiento del producto. Diseñé la propuesta visual en Figma, produje las animaciones y escenas en After Effects y realicé la edición y postproducción final en Premiere Pro, garantizando coherencia visual y calidad profesional en cada pieza.",
-        gallery: [
-            "videos/tugesto/Vídeo_Final.mp4",
-            "videos/tugesto/Video-corto-tugesto.mp4",
-            "videos/tugesto/Video-Producto.mp4",
-            "videos/tugesto/TikTok-Producto-22-08-25.mp4",
-        ]
+        youtubeIds: ["tBXGQUyQ5l0", "rrIMf_QYW7o", "dbr5gAJNIRU", "DaOUJuATSKg"],
+        gallery: []
     },
     {
         title: "Diseño Chargeverse",
@@ -47,9 +43,8 @@ const projects = [
         year: "2024",
         challenge: "Desarrollé un dashboard completamente ficticio con el objetivo de presentar y vender el producto a gestorías. Diseñé toda la interfaz en Figma, definiendo la estructura, jerarquía visual y experiencia de usuario, y posteriormente realicé la animación en After Effects para dotarlo de dinamismo y reforzar su atractivo comercial.",
         solution: "Implementación de arquitectura de componentes modulares con dashboards interactivos.",
-        gallery: [
-            "videos/tugesto-2/Videos-gestorias-web-final-editado.mp4",
-        ]
+        videoUrl: "https://www.youtube.com/embed/MZUfxE5LSNU",
+        gallery: []
     },
     {
         title: "Proyecto Esparta",
@@ -97,8 +92,8 @@ const projects = [
         year: "2024",
         challenge: "Crear una narrativa visual a través de tipografía experimental y texturas.",
         solution: "Uso de técnicas de 'collage' digital y distorsión tipográfica analógica.",
+        videoUrl: "https://www.youtube.com/embed/Yes-57nUaXQ",
         gallery: [
-            "videos/eactivo/eactivo_Reel.mp4",
             "videos/eactivo/C1.png",
             "videos/eactivo/C2.png",
             "videos/eactivo/C3.png",
@@ -113,9 +108,8 @@ const projects = [
         role: "Editor y Videógrafo",
         year: "2024",
         challenge: "Proyecto centrado en la grabación y edición de un vídeo corto para redes sociales. Se ha buscado un resultado dinámico, utilizando cortes rápidos, transiciones y efectos visuales para maximizar la retención de la audiencia.",
-        gallery: [
-            "videos/tugesto_3/GesBite.mp4"
-        ]
+        videoUrl: "https://www.youtube.com/embed/zCjz2F8FCys",
+        gallery: []
     },
     /*
     {

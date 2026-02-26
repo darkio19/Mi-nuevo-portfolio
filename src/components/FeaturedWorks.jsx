@@ -10,9 +10,55 @@ const projects = [
         software: ["Pr", "Ae", "Fi"],
         duration: "9 MESES",
         role: "Editor de vídeos",
-        year: "2024",
+        year: "2025",
         challenge: "En este proyecto en tugesto desarrollé una serie de vídeos animados para mostrar al usuario, de forma realista, el funcionamiento del producto. Diseñé la propuesta visual en Figma, produje las animaciones y escenas en After Effects y realicé la edición y postproducción final en Premiere Pro, garantizando coherencia visual y calidad profesional en cada pieza.",
         youtubeIds: ["tBXGQUyQ5l0", "rrIMf_QYW7o", "dbr5gAJNIRU", "DaOUJuATSKg"],
+        gallery: []
+    },
+    {
+        title: "Diseño Tugesto",
+        category: "Diseño Gráfico",
+        img: "imagenes/tugesto/Vulta-españa-linkedin.jpg",
+        software: ["Ps", "Ai"],
+        duration: "TBD",
+        role: "Diseño Gráfico",
+        year: "2025",
+        challenge: "Diseño de piezas gráficas para distintas necesidades de comunicación visual de la marca. Cada pieza fue desarrollada con coherencia de identidad y adaptada al formato y canal correspondiente.",
+        gallery: [
+            "imagenes/tugesto/Vulta-españa-linkedin.jpg",
+            "imagenes/tugesto/Toour.jpg",
+            "imagenes/tugesto/Diseño-final-linkedin.jpg"
+        ]
+    },
+    {
+        title: "Diseño RRSS Tugesto",
+        category: "Diseño Gráfico",
+        img: "imagenes/Carrusel-tugesto/08.jpg",
+        software: ["Ps", "Ai"],
+        duration: "TBD",
+        role: "Diseño Gráfico",
+        year: "2025",
+        challenge: "Creación de un carrusel de contenido para redes sociales de Tugesto, con un estilo visual cohesionado y adaptado a la identidad de la marca. Diseño enfocado en captar la atención y transmitir el valor del producto de forma clara y atractiva.",
+        gallery: [
+            "imagenes/Carrusel-tugesto/08.jpg",
+            "imagenes/Carrusel-tugesto/01.jpg",
+            "imagenes/Carrusel-tugesto/02.jpg",
+            "imagenes/Carrusel-tugesto/03.jpg",
+            "imagenes/Carrusel-tugesto/04.jpg",
+            "imagenes/Carrusel-tugesto/06.jpg",
+            "imagenes/Carrusel-tugesto/07.jpg"
+        ]
+    },
+    {
+        title: "Video Para RRSS",
+        category: "Edición y grabación de vídeo",
+        img: "imagenes/recursos/proyecto-1.jpg",
+        software: ["Pr", "Ae"],
+        duration: "TBD",
+        role: "Editor y Videógrafo",
+        year: "2025",
+        challenge: "Proyecto centrado en la grabación y edición de un vídeo corto para redes sociales. Se ha buscado un resultado dinámico, utilizando cortes rápidos, transiciones y efectos visuales para maximizar la retención de la audiencia.",
+        youtubeIds: ["zCjz2F8FCys", "ooz7Rj69lS0"],
         gallery: []
     },
     {
@@ -40,7 +86,7 @@ const projects = [
         software: ["Fi", "Ae"],
         duration: "2 meses",
         role: "Animación web",
-        year: "2024",
+        year: "2025",
         challenge: "Desarrollé un dashboard completamente ficticio con el objetivo de presentar y vender el producto a gestorías. Diseñé toda la interfaz en Figma, definiendo la estructura, jerarquía visual y experiencia de usuario, y posteriormente realicé la animación en After Effects para dotarlo de dinamismo y reforzar su atractivo comercial.",
         solution: "Implementación de arquitectura de componentes modulares con dashboards interactivos.",
         videoUrl: "https://www.youtube.com/embed/MZUfxE5LSNU",
@@ -82,6 +128,7 @@ const projects = [
             "imagenes/stories-fermentaris/111224-Fermentaris-S5.png"
         ]
     },
+    /*
     {
         title: "Proyecto Eactivo",
         category: "Video y Diseño",
@@ -93,37 +140,8 @@ const projects = [
         challenge: "Crear una narrativa visual a través de tipografía experimental y texturas.",
         solution: "Uso de técnicas de 'collage' digital y distorsión tipográfica analógica.",
         videoUrl: "https://www.youtube.com/embed/Yes-57nUaXQ",
-        gallery: [
-            "videos/eactivo/C1.png",
-            "videos/eactivo/C2.png",
-            "videos/eactivo/C3.png",
-        ]
-    },
-    {
-        title: "Video Para RRSS",
-        category: "Edición y grabación de vídeo",
-        img: "imagenes/recursos/proyecto-1.jpg",
-        software: ["Pr", "Ae"],
-        duration: "TBD",
-        role: "Editor y Videógrafo",
-        year: "2024",
-        challenge: "Proyecto centrado en la grabación y edición de un vídeo corto para redes sociales. Se ha buscado un resultado dinámico, utilizando cortes rápidos, transiciones y efectos visuales para maximizar la retención de la audiencia.",
-        videoUrl: "https://www.youtube.com/embed/zCjz2F8FCys",
         gallery: []
     },
-    /*
-    {
-        title: "Título Nuevo Proyecto 2",
-        category: "Categoría 2",
-        img: "imagenes/recursos/proyecto-3.jpg",
-        software: ["Pr", "Ae"],
-        duration: "TBD",
-        role: "Rol",
-        year: "2024",
-        challenge: "Descripción del desafío o proyecto.",
-        solution: "Descripción de la solución aportada.",
-        gallery: []
-    }
     */
 ];
 

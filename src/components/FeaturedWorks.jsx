@@ -48,7 +48,7 @@ const projects = [
         challenge: "Desarrollé un dashboard completamente ficticio con el objetivo de presentar y vender el producto a gestorías. Diseñé toda la interfaz en Figma, definiendo la estructura, jerarquía visual y experiencia de usuario, y posteriormente realicé la animación en After Effects para dotarlo de dinamismo y reforzar su atractivo comercial.",
         solution: "Implementación de arquitectura de componentes modulares con dashboards interactivos.",
         gallery: [
-            "videos/tugesto-2/Videos gestorias web-final-editado.mp4",
+            "videos/tugesto-2/Videos-gestorias-web-final-editado.mp4",
         ]
     },
     {

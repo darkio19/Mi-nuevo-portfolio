@@ -224,6 +224,8 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                                 controls
                                                 autoPlay
                                                 muted
+                                                loop
+                                                playsInline
                                                 style={{
                                                     width: '100%',
                                                     height: '100%',
@@ -457,6 +459,9 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                     src={`${import.meta.env.BASE_URL}${allMedia[lightboxIndex]}`}
                                     controls
                                     autoPlay
+                                    muted
+                                    loop
+                                    playsInline
                                     style={{
                                         maxWidth: isMobile ? '100vw' : '85vw',
                                         maxHeight: isMobile ? '70vh' : '90vh',

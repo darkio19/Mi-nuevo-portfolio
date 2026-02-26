@@ -6,23 +6,23 @@ const projects = [
     {
         title: "Proyecto Tugesto",
         category: "Edicón de Vídeo/Motion Graphics",
-        img: "/imagenes/recursos/proyecto-1.jpg",
+        img: "imagenes/recursos/proyecto-1.jpg",
         software: ["Pr", "Ae", "Fi"],
         duration: "9 MESES",
         role: "Editor de vídeos",
         year: "2024",
         challenge: "En este proyecto en tugesto desarrollé una serie de vídeos animados para mostrar al usuario, de forma realista, el funcionamiento del producto. Diseñé la propuesta visual en Figma, produje las animaciones y escenas en After Effects y realicé la edición y postproducción final en Premiere Pro, garantizando coherencia visual y calidad profesional en cada pieza.",
         gallery: [
-            "/videos/tugesto/Vídeo_Final.mp4",
-            "/videos/tugesto/Video-corto-tugesto.mp4",
-            "/videos/tugesto/Video-Producto.mp4",
-            "/videos/tugesto/TikTok-Producto-22-08-25.mp4",
+            "videos/tugesto/Vídeo_Final.mp4",
+            "videos/tugesto/Video-corto-tugesto.mp4",
+            "videos/tugesto/Video-Producto.mp4",
+            "videos/tugesto/TikTok-Producto-22-08-25.mp4",
         ]
     },
     {
         title: "Diseño Chargeverse",
         category: "Social Media",
-        img: "/imagenes/090125_Chargeverse_Carrusel_C1.jpg",
+        img: "imagenes/090125_Chargeverse_Carrusel_C1.jpg",
         software: ["Ai", "Ps"],
         duration: "",
         role: "Social Media Designer",
@@ -30,17 +30,17 @@ const projects = [
         challenge: "Crear un carrusel para redes sociales acorde con en estilo de la marca.",
         solution: "Desarrollo de un carrusel en los formatos correspondientes a las redes sociales que se iban a publicar utilizando Photoshop e Illustrator. Todo esto durante mi estancia en Esparta Digital.",
         gallery: [
-            "/imagenes/090125_Chargeverse_Carrusel_C1.jpg",
-            "/imagenes/090125_Chargeverse_Carrusel_C2.jpg",
-            "/imagenes/090125_Chargeverse_Carrusel_C3.jpg",
-            "/imagenes/090125_Chargeverse_Carrusel_C4.jpg",
-            "/imagenes/090125_Chargeverse_Carrusel_C5.jpg"
+            "imagenes/090125_Chargeverse_Carrusel_C1.jpg",
+            "imagenes/090125_Chargeverse_Carrusel_C2.jpg",
+            "imagenes/090125_Chargeverse_Carrusel_C3.jpg",
+            "imagenes/090125_Chargeverse_Carrusel_C4.jpg",
+            "imagenes/090125_Chargeverse_Carrusel_C5.jpg"
         ]
     },
     {
         title: "Plataforma Gestorías",
         category: "Diseño y animación de vídeo",
-        img: "/imagenes/recursos/proyecto-3.jpg",
+        img: "imagenes/recursos/proyecto-3.jpg",
         software: ["Fi", "Ae"],
         duration: "2 meses",
         role: "Animación web",
@@ -48,13 +48,13 @@ const projects = [
         challenge: "Desarrollé un dashboard completamente ficticio con el objetivo de presentar y vender el producto a gestorías. Diseñé toda la interfaz en Figma, definiendo la estructura, jerarquía visual y experiencia de usuario, y posteriormente realicé la animación en After Effects para dotarlo de dinamismo y reforzar su atractivo comercial.",
         solution: "Implementación de arquitectura de componentes modulares con dashboards interactivos.",
         gallery: [
-            "/videos/tugesto-2/Videos gestorias web-final-editado.mp4",
+            "videos/tugesto-2/Videos gestorias web-final-editado.mp4",
         ]
     },
     {
         title: "Proyecto Esparta",
         category: "Diseño y Redes Sociales",
-        img: "/imagenes/gifs-esparta/1624-BodegasNodus-GIF-V2.gif",
+        img: "imagenes/gifs-esparta/1624-BodegasNodus-GIF-V2.gif",
         software: ["Ps", "Ae"],
         duration: "2 WEEKS",
         role: "Motion Designer",
@@ -62,17 +62,17 @@ const projects = [
         challenge: "Creación de una serie de elementos visuales dinámicos para distintas empresas que tenía a mi cargo en Esparta Digital.",
         solution: "Desarrollo de GIFs animados optimizados para redes sociales que capturan la energía de la marca.",
         gallery: [
-            "/imagenes/gifs-esparta/1624-BodegasNodus-GIF-V2.gif",
-            "/imagenes/gifs-esparta/200125-Distron_GIF.gif",
-            "/imagenes/gifs-esparta/251124-Washtec-GIF.gif",
-            "/imagenes/gifs-esparta/GIF.gif",
-            "/imagenes/gifs-esparta/210125-Chargeverse-GIF.gif"
+            "imagenes/gifs-esparta/1624-BodegasNodus-GIF-V2.gif",
+            "imagenes/gifs-esparta/200125-Distron_GIF.gif",
+            "imagenes/gifs-esparta/251124-Washtec-GIF.gif",
+            "imagenes/gifs-esparta/GIF.gif",
+            "imagenes/gifs-esparta/210125-Chargeverse-GIF.gif"
         ]
     },
     {
         title: "Diseño Fermentaris",
         category: "Diseño y Redes Sociales",
-        img: "/imagenes/stories-fermentaris/111224-Fermentaris-S1.png",
+        img: "imagenes/stories-fermentaris/111224-Fermentaris-S1.png",
         software: ["Ps", "Ai"],
         duration: "",
         role: "Diseño Social Media",
@@ -80,17 +80,17 @@ const projects = [
         challenge: "Crear una serie de Stories para la marca Fermentaris.",
         solution: "Rediseño basado en 'Glassmorphism' para dar un aire tecnológico y premium.",
         gallery: [
-            "/imagenes/stories-fermentaris/111224-Fermentaris-S1.png",
-            "/imagenes/stories-fermentaris/111224-Fermentaris-S2.png",
-            "/imagenes/stories-fermentaris/111224-Fermentaris-S3.png",
-            "/imagenes/stories-fermentaris/111224-Fermentaris-S4.png",
-            "/imagenes/stories-fermentaris/111224-Fermentaris-S5.png"
+            "imagenes/stories-fermentaris/111224-Fermentaris-S1.png",
+            "imagenes/stories-fermentaris/111224-Fermentaris-S2.png",
+            "imagenes/stories-fermentaris/111224-Fermentaris-S3.png",
+            "imagenes/stories-fermentaris/111224-Fermentaris-S4.png",
+            "imagenes/stories-fermentaris/111224-Fermentaris-S5.png"
         ]
     },
     {
         title: "Proyecto Eactivo",
         category: "Video y Diseño",
-        img: "/videos/eactivo/C1.png",
+        img: "videos/eactivo/C1.png",
         software: ["Ps", "Ai"],
         duration: "1 WEEK",
         role: "Digital Artist",
@@ -98,30 +98,30 @@ const projects = [
         challenge: "Crear una narrativa visual a través de tipografía experimental y texturas.",
         solution: "Uso de técnicas de 'collage' digital y distorsión tipográfica analógica.",
         gallery: [
-            "/videos/eactivo/eactivo_Reel.mp4",
-            "/videos/eactivo/C1.png",
-            "/videos/eactivo/C2.png",
-            "/videos/eactivo/C3.png",
+            "videos/eactivo/eactivo_Reel.mp4",
+            "videos/eactivo/C1.png",
+            "videos/eactivo/C2.png",
+            "videos/eactivo/C3.png",
         ]
     },
     {
         title: "Video Para RRSS",
         category: "Edición y grabación de vídeo",
-        img: "/imagenes/recursos/proyecto-1.jpg",
+        img: "imagenes/recursos/proyecto-1.jpg",
         software: ["Pr", "Ae"],
         duration: "TBD",
         role: "Editor y Videógrafo",
         year: "2024",
         challenge: "Proyecto centrado en la grabación y edición de un vídeo corto para redes sociales. Se ha buscado un resultado dinámico, utilizando cortes rápidos, transiciones y efectos visuales para maximizar la retención de la audiencia.",
         gallery: [
-            "/videos/tugesto_3/GesBite.mp4"
+            "videos/tugesto_3/GesBite.mp4"
         ]
     },
     /*
     {
         title: "Título Nuevo Proyecto 2",
         category: "Categoría 2",
-        img: "/imagenes/recursos/proyecto-3.jpg",
+        img: "imagenes/recursos/proyecto-3.jpg",
         software: ["Pr", "Ae"],
         duration: "TBD",
         role: "Rol",
@@ -201,7 +201,7 @@ const FeaturedWorks = () => {
                             }}
                         >
                             <img
-                                src={project.img}
+                                src={`${import.meta.env.BASE_URL}${project.img}`}
                                 alt={project.title}
                                 style={{ width: '100%', height: '100%', objectFit: 'cover', transition: '0.5s' }}
                             />

@@ -19,7 +19,7 @@ const Hero = () => {
             position: 'relative',
             overflow: 'hidden',
             padding: 'var(--section-padding) 0',
-            background: 'linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 60%, rgba(10, 10, 10, 1) 100%), url("/background.jpg") no-repeat center center/cover'
+            background: `linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 60%, rgba(10, 10, 10, 1) 100%), url("${import.meta.env.BASE_URL}background.jpg") no-repeat center center/cover`
         }}>
             <div style={{
                 position: 'absolute',

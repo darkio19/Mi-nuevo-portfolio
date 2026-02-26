@@ -220,7 +220,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                                 initial={{ opacity: 0 }}
                                                 animate={{ opacity: 1 }}
                                                 exit={{ opacity: 0 }}
-                                                src={mainMedia}
+                                                src={`${import.meta.env.BASE_URL}${mainMedia}`}
                                                 controls
                                                 autoPlay
                                                 muted
@@ -236,7 +236,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                                 initial={{ opacity: 0 }}
                                                 animate={{ opacity: 1 }}
                                                 exit={{ opacity: 0 }}
-                                                src={mainMedia}
+                                                src={`${import.meta.env.BASE_URL}${mainMedia}`}
                                                 alt={project.title}
                                                 style={{
                                                     width: '100%',
@@ -325,7 +325,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                                     <span style={{ position: 'absolute', bottom: '2px', right: '4px', fontSize: '8px', color: '#fff', opacity: 0.5, fontWeight: 'bold' }}>VIDEO</span>
                                                 </div>
                                             ) : (
-                                                <img src={img} alt={`Gallery ${i}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                                <img src={`${import.meta.env.BASE_URL}${img}`} alt={`Gallery ${i}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                             )}
                                         </motion.div>
                                     ))}
@@ -454,7 +454,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                     animate={{ opacity: 1, scale: 1 }}
                                     exit={{ opacity: 0, scale: 0.95 }}
                                     transition={{ duration: 0.2 }}
-                                    src={allMedia[lightboxIndex]}
+                                    src={`${import.meta.env.BASE_URL}${allMedia[lightboxIndex]}`}
                                     controls
                                     autoPlay
                                     style={{
@@ -472,7 +472,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                     animate={{ opacity: 1, x: 0, scale: 1 }}
                                     exit={{ opacity: 0, x: -20, scale: 0.95 }}
                                     transition={{ duration: 0.2 }}
-                                    src={allMedia[lightboxIndex]}
+                                    src={`${import.meta.env.BASE_URL}${allMedia[lightboxIndex]}`}
                                     style={{
                                         maxWidth: isMobile ? '100vw' : '85vw',
                                         maxHeight: isMobile ? '70vh' : '90vh',

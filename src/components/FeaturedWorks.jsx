@@ -58,7 +58,8 @@ const projects = [
         role: "Editor y Videógrafo",
         year: "2025",
         challenge: "Proyecto centrado en la grabación y edición de un vídeo corto para redes sociales. Se ha buscado un resultado dinámico, utilizando cortes rápidos, transiciones y efectos visuales para maximizar la retención de la audiencia.",
-        youtubeIds: ["zCjz2F8FCys", "ooz7Rj69lS0"],
+        vimeoIds: ["1168821541"],
+        youtubeIds: ["ooz7Rj69lS0"],
         gallery: []
     },
     {

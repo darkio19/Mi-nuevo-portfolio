@@ -30,8 +30,10 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
             setMainMedia(initialMedia);
             setIsPlaying(false);
             setShowLightbox(false);
-            // Set YouTube video URL
-            if (project.youtubeIds?.length > 0) {
+            // Set initial video URL: Vimeo first, then YouTube, then generic
+            if (project.vimeoIds?.length > 0) {
+                setCurrentVideoUrl(`https://player.vimeo.com/video/${project.vimeoIds[0]}`);
+            } else if (project.youtubeIds?.length > 0) {
                 setCurrentVideoUrl(`https://www.youtube.com/embed/${project.youtubeIds[0]}`);
             } else {
                 setCurrentVideoUrl(project.videoUrl || null);
@@ -215,7 +217,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                                     width="100%"
                                                     height="100%"
                                                     src={`${currentVideoUrl}?autoplay=1`}
-                                                    title="YouTube video player"
+                                                    title="Video player"
                                                     frameBorder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                     allowFullScreen
@@ -338,6 +340,46 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                             )}
                                         </motion.div>
                                     ))}
+                                    {/* Vimeo video thumbnails */}
+                                    {project.vimeoIds && project.vimeoIds.map((id, i) => {
+                                        const vimeoUrl = `https://player.vimeo.com/video/${id}`;
+                                        return (
+                                            <motion.div
+                                                key={`vm-${i}`}
+                                                whileHover={{ scale: 1.05, opacity: 1 }}
+                                                whileTap={{ scale: 0.95 }}
+                                                onClick={() => {
+                                                    setCurrentVideoUrl(vimeoUrl);
+                                                    setIsPlaying(true);
+                                                }}
+                                                style={{
+                                                    flex: '0 0 auto',
+                                                    width: isMobile ? '80px' : '100px',
+                                                    aspectRatio: '16/10',
+                                                    borderRadius: '12px',
+                                                    overflow: 'hidden',
+                                                    backgroundColor: '#111',
+                                                    cursor: 'pointer',
+                                                    border: currentVideoUrl === vimeoUrl ? '2px solid var(--accent-yellow)' : '1px solid rgba(255,255,255,0.1)',
+                                                    opacity: currentVideoUrl === vimeoUrl ? 1 : 0.6,
+                                                    transition: 'opacity 0.3s, border 0.3s',
+                                                    position: 'relative',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center'
+                                                }}
+                                            >
+                                                <img
+                                                    src={`https://vumbnail.com/${id}.jpg`}
+                                                    alt={`Vimeo video ${i + 1}`}
+                                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                                />
+                                                <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+                                                    <Play size={14} color="var(--accent-yellow)" fill="var(--accent-yellow)" />
+                                                </div>
+                                            </motion.div>
+                                        );
+                                    })}
                                     {/* YouTube video thumbnails */}
                                     {project.youtubeIds && project.youtubeIds.map((id, i) => (
                                         <motion.div
